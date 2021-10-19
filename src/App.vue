@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+  <h1></h1>
+  <Clock></Clock>
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Clock from './components/Clock.vue'
 
 export default {
-  name: 'App',
+  data: function() {
+    return {
+      counter: 0,
+      setImage: [
+  require("/images/menu1.jpg"),
+  require("/images/menu2.jpg"),
+  require("/images/menu3.jpg"),
+  require("/images/menu4.jpg")
+],
+backgroundImage: ''
+    }
+  },
+  methods: {
+    slideShow: function() {
+      
+    }
+  },
   components: {
-    HelloWorld
+    Clock
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+p {
+  color: red;
 }
 </style>
