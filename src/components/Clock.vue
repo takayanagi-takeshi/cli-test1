@@ -44,7 +44,7 @@ export default {
     }
   },
   beforeDestroy function () {
-    clearInterval(this.)
+    clearInterval(this.data.getTime)
   }
 
 }
