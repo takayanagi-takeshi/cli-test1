@@ -43,8 +43,8 @@ export default {
       this.time = `${hour}：${min}：${sec} (${week[day]})`;
     }
   },
-  beforeDestroy function () {
-    clearInterval(this.data.getTime)
+  beforeDestroy: function () {
+    clearInterval(this.getTime)
   }
 
 }
@@ -53,8 +53,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* p {
-  color: blue;
-} */
+#outPutField {
+  font-size: 40px;
+  color: beige;
+  background-color: rgba(0, 0, 0, 0.377);
+  border-radius: 999999px;
+  padding: 1em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 
 </style>
